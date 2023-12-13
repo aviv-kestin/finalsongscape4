@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+ }
+
+
+ .play {
+
+    background-color:rgb(220, 102, 139);
+    position: absolute;
+    font-size: 120%;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    border-radius: 40%;
+    cursor: pointer;
+    }
+    
+    .pause {
+       background-color:rgb(220, 102, 139);
+       position: absolute;
+       font-size: 120%;
+       position: absolute;
+       top: 20px;
+       left: 65px;
+       padding: 10px;
+    border-radius: 40%;
+    cursor: pointer;
+    }
+
+.water {
+    background-color:#2d7ce2;
+    display: flex;
+    height: 100vh;
+    background-size: auto;
+}
+
+
+
+
+@keyframes run {
+    0% {
+        transform:translateX(0vw)
+      }
+      50% {
+        transform:translateX(5.4vw)
+      }
+      100% {
+        transform:translateX(0vw)
+      }
+ }
+
+ @keyframes run2 {
+    0% {
+        transform:translateX(0vw)
+      }
+      50% {
+        transform:translateX(5vw)
+      }
+      100% {
+        transform:translateX(0vw)
+      }
+ }
+
+ @keyframes run3 {
+    0% {
+        transform:translateX(0vw)
+      }
+      50% {
+        transform:translateX(4.8vw)
+      }
+      100% {
+        transform:translateX(0vw)
+      }
+ }
+
+ @keyframes slidein {
+    0% {
+       
+        transform:translateX(-10vw) rotateY(0deg)
+      }
+    48% {
+       transform:translateX(135vw)
+    }
+      50% {
+        
+        transform: translateX(140vw) rotateY(180deg)
+            }
+
+         
+      95% {
+        
+        transform:translateX(-20vw) rotateY(180deg)
+      }
+
+
+
+    }
+ 
+ 
+ .run{
+    animation: ease-in-out infinite;
+    animation-name: run;
+    animation-duration: 4.2s;
+ }
+
+ .run2{
+    animation: ease-in-out infinite;
+    animation-name: run;
+    animation-duration: 4.8s;
+ }
+
+ .run3{
+    animation: ease-in-out infinite;
+    animation-name: run;
+    animation-duration: 4.4s;
+ }
+ 
+
+ .slidein {
+    animation: ease-in-out infinite;
+    animation-name: slidein;
+    animation-duration: 17s;
+ }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.weed1 {
+    position: absolute;
+    width: 8.6vw;
+    height: 65vh;
+    bottom: -5vh;
+    left: 15vw;
+    z-index: 2;
+  
+
+}
+
+.weed2 {
+    position: absolute;
+    width: 11.5vw;
+    height: auto;
+    bottom: -6vh;
+    left: 31.5vw;
+    z-index: 2;
+}
+
+.weed3 {
+    position: absolute;
+    width: 10.5vw;
+    height: auto;
+    bottom: -4vh;
+    right: 15vw;
+    z-index: 2;
+    
+  
+}
+
+
+
+
+
+
+ .clown {
+    position: absolute;
+    width: 18vw;
+    height: auto;
+    bottom: 55.5vh;
+    z-index: 1;
+    left: -30vw;
+}
+
+.fishy {
+  position: absolute;
+  width: 23vw;
+  height: auto;
+  bottom: 27.5vh;
+  z-index: 1;
+  left: -30vw;
+ 
+
+}
+
+
+@keyframes connect {
+  0% {
+     
+      transform:translateX(-30vw) rotateY(0deg)
+    }
+  48% {
+     transform:translateX(135vw)
+  }
+    50% {
+      
+      transform: translateX(145vw) rotateY(180deg)
+          }
+
+       
+    95% {
+      
+      transform:translateX(-10vw) rotateY(180deg)
+    }
+
+
+
+  }
+
+  .connect {
+    animation: ease-in-out infinite;
+    animation-name: slidein;
+    animation-duration: 10s;
+ }
+
+
+ .puffer {
+  position: absolute;
+  width: 12vw;
+  height: auto;
+  bottom: 5vh;
+  z-index: 0;
+  left: 31.5vw;
+  display: none;
+  animation: rotating 20.5s ease-in-out infinite;
+
+ }
+  @keyframes rotating {
+    0% {
+       
+        transform: rotate(0deg) translateX(0) 
+      }
+    50% {
+      transform: rotate(180deg) translateX(30vw) 
+    }
+
+    55% {
+      transform: rotate(180deg) translateX(48vw) 
+    }
+
+    58% {
+      transform: rotate(180deg) translateX(80vw) 
+    }
+
+    60% {
+      transform:  translateX(30vw) translateY(80vh)
+    }
+
+    85% {
+      transform: translateX(30vw) translateY(-10vh) 
+    }
+
+    100% {
+       transform: translateX(0vw) rotate(-360deg)}
+    }
+    
+  
+  
+    

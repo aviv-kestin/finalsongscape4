@@ -1,0 +1,63 @@
+$("document").ready(function() {
+
+   
+
+
+        var audioElement = document.createElement('audio');
+        audioElement.setAttribute('src', 'boss-mod.mp3');
+        audioElement.setAttribute('autoplay', 'autoplay');
+        //audioElement.load()
+        $.get();
+        audioElement.addEventListener("load", function() {
+        audioElement.play();
+        }, true);
+    
+    
+    
+    
+        $( ".play" ).click(function() {
+          audioElement.play();
+          $( ".puffer" ).show(3000);
+          $( ".man" ).removeClass( "off" );
+          $( ".clown").addClass("slidein");
+          $( ".weed1").addClass("run");
+          $( ".weed2").addClass("run2");
+          $( ".weed3").addClass("run3");
+          $( ".fishy").addClass("connect");
+         
+        });
+    
+    
+    
+        $( ".pause" ).click(function() {
+          audioElement.pause();
+            $( ".man" ).addClass( "off" )
+            $( ".puffer" ).hide();
+            $( ".clown").removeClass("slidein");
+            $( ".weed1").removeClass("run");
+            $( ".weed2").removeClass("run2");
+            $( ".weed3").removeClass("run3");
+            $( ".fishy").removeClass("connect");
+          });
+    
+    
+        
+    
+    
+         
+    
+    
+    
+      
+    
+    
+    
+    });
+
+
+
+
+
+
+
+
